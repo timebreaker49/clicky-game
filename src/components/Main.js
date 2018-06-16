@@ -3,13 +3,21 @@ import flagsArray from '../Flag.json';
 import Flag from './Flag';
 
 export default class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      previousClick: false
+    }
+  }
 
-  onClick = (id) => {
+
+
+  clickHandler = id => {
     
-    this.props.scoreHandler(this.props.id);
-    console.log("props id :" + this.props.id);
+    this.props.scoreKeeper(id);
+    console.log("props id :" + id);
     // some sort of function to shuffle the array
-    
+
     
   }
 
@@ -27,9 +35,9 @@ export default class Main extends Component {
                 id={ flag.id}
                 src={ flag.src}
                 alt={ flag.name}
-                key = { flag.id.toString() }
+                key={ flag.id.toString() }
 
-                onClick = {this.onClick}
+                clickHandler={this.clickHandler}
               /> 
             )}
           </div>

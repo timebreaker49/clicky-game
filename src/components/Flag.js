@@ -9,8 +9,8 @@ export default class Flag extends Component {
         src={this.props.src}
         alt={this.props.name}
 
-        // onClick={ () => function to handle click this.props.handleClick(this.props.id) }
-        // { this.props.children }
+        onClick={ () => this.props.clickHandler(this.props.id) }
+        
       />
     )
   }
