@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import flagsArray from '../flagsArray.json';
+import flagsArray from '../Flag.json';
 import Flag from './Flag';
 
 export default class Main extends Component {
@@ -10,13 +10,13 @@ export default class Main extends Component {
             <p>
               Click on the flags, but only once! 
             </p>
-          </div>;
+          </div>
           <div className="container-fluid flags-area">
             {flagsArray.map( flag => 
               <Flag
                 id={ flag.id}
                 src={ flag.src}
-                name={ flag.name}
+                alt={ flag.name}
                 key = { flag.id.toString() }
 
                 // onClick = {this.onClick}
