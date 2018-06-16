@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import flagsArray from '../Flag.json';
 import Flag from './Flag';
+import '../styles/Main.css';
 
 export default class Main extends Component {
   constructor(props) {
