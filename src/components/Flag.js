@@ -6,7 +6,7 @@ export default class Flag extends Component {
       <img className="flag"
         id={"flag" + this.props.id}
         src={this.props.src}
-        alt={this.props.name}
+        name={this.props.name}
 
         // onClick={ () => function to handle click this.props.handleClick(this.props.id) }
         { this.props.children }
