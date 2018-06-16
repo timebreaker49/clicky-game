@@ -1,0 +1,12 @@
+.flag {
+    width: 250px;
+    height: 167px;
+    margin: 12px;
+    border: 2px solid black
+}
+
+.flag:hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
