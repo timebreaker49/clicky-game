@@ -1,0 +1,63 @@
+[
+    {
+        "id": "1",
+        "src": "assets/angola-flag-xs.png",
+        "name": "Angola" 
+    },
+    {
+        "id": "2",
+        "src": "assets/barbados-flag-xs.png",
+        "name": "Barbados" 
+    },
+    {
+        "id": "3",
+        "src": "assets/ghana-flag-xs.png",
+        "name": "Ghana" 
+    },
+    {
+        "id": "4",
+        "src": "assets/india-flag-xs.png",
+        "name": "India" 
+    },
+    {
+        "id": "5",
+        "src": "assets/mongolia-flag-xs.png",
+        "name": "Mongolia" 
+    },
+    {
+        "id": "6",
+        "src": "assets/brazil-flag-xs.png",
+        "name": "Brazil" 
+    },
+    {
+        "id": "7",
+        "src": "assets/new-zealand-flag-xs.png",
+        "name": "New-zealand" 
+    },
+    {
+        "id": "8",
+        "src": "assets/pakistan-flag-xs.png",
+        "name": "Pakistan" 
+    },
+    {
+        "id": "9",
+        "src": "assets/philippines-flag-xs.png",
+        "name": "Philippines" 
+    },
+    {
+        "id": "10",
+        "src": "assets/south-korea-flag-xs.png",
+        "name": "South Korea" 
+    },
+    {
+        "id": "11",
+        "src": "assets/sri-lanka-flag-xs.png",
+        "name": "Sri-Lanka" 
+    },
+    {
+        "id": "12",
+        "src": "assets/venezuela-flag-xs.png",
+        "name": "Venezuela" 
+    }
+]
+
