@@ -27,9 +27,20 @@ class App extends Component {
       this.setState(
         { isClicked: [...this.state.isClicked, id] });
       const newScore = this.state.score + 1;
+      
       this.setState({
         score: newScore
-      })
+      });
+      if (newScore > this.state.highScore){
+        this.setState({highScore: newScore})
+      }
+      if (newScore === 12) {
+        alert("Congrats on winning the game!!");
+        this.setState({
+          score: 0,
+          isClicked: []
+        });
+      }
     }
   }
 
@@ -38,6 +49,7 @@ class App extends Component {
       <div className="App">
         <Navbar 
         score = {this.state.score}
+        highScore = {this.state.highScore}
         />
         <Main 
         scoreKeeper = {this.scoreKeeper}

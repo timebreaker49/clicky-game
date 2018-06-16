@@ -5,12 +5,10 @@ export default class Flag extends Component {
   render() {
     return (
       <img className="img-fluid flag"
-        id={"flag" + this.props.id}
+        id={this.props.id}
         src={this.props.src}
         alt={this.props.name}
-
-        onClick={ () => this.props.clickHandler(this.props.id) }
-        
+        onClick={ () => this.props.clickHandler(this.props.id) }        
       />
     )
   }

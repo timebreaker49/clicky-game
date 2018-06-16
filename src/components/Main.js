@@ -10,15 +10,19 @@ export default class Main extends Component {
     }
   }
 
-
+  shuffle = array => {
+    for (let a = array.length - 1; a > 0; a --) {
+      const b = Math.floor(Math.random() * (a + 1));
+      [array[a], array[b]] = [array[b], array[a]];
+    }
+  }
 
   clickHandler = id => {
-    
     this.props.scoreKeeper(id);
-    console.log("props id :" + id);
-    // some sort of function to shuffle the array
-
-    
+    this.setState({
+      previousClick: id
+    });
+    this.shuffle(flagsArray);
   }
 
   render() {
@@ -36,12 +40,10 @@ export default class Main extends Component {
                 src={ flag.src}
                 alt={ flag.name}
                 key={ flag.id.toString() }
-
                 clickHandler={this.clickHandler}
               /> 
             )}
           </div>
-        { this.props.children }
       </div>
     )
   }
